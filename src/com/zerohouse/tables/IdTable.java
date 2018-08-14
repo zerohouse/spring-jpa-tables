@@ -15,5 +15,5 @@ public abstract class IdTable {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected long id;
+    protected Long id;
 }
