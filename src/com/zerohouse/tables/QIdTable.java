@@ -1,18 +1,19 @@
 package com.zerohouse.tables;
 
-import com.mysema.query.types.Path;
-import com.mysema.query.types.PathMetadata;
-import com.mysema.query.types.path.*;
+import com.querydsl.core.types.Path;
+import com.querydsl.core.types.PathMetadata;
+import com.querydsl.core.types.dsl.EntityPathBase;
+import com.querydsl.core.types.dsl.NumberPath;
 
 import javax.annotation.Generated;
 
-import static com.mysema.query.types.PathMetadataFactory.*;
+import static com.querydsl.core.types.PathMetadataFactory.forVariable;
 
 
 /**
  * QIdTable is a Querydsl query type for IdTable
  */
-@Generated("com.mysema.query.codegen.SupertypeSerializer")
+@Generated("com.querydsl.codegen.SupertypeSerializer")
 public class QIdTable extends EntityPathBase<IdTable> {
 
     private static final long serialVersionUID = -1528985651L;
@@ -29,7 +30,7 @@ public class QIdTable extends EntityPathBase<IdTable> {
         super(path.getType(), path.getMetadata());
     }
 
-    public QIdTable(PathMetadata<?> metadata) {
+    public QIdTable(PathMetadata metadata) {
         super(IdTable.class, metadata);
     }
 

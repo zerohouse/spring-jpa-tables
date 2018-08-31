@@ -1,18 +1,20 @@
 package com.zerohouse.tables;
 
-import com.mysema.query.types.Path;
-import com.mysema.query.types.PathMetadata;
-import com.mysema.query.types.path.*;
+import com.querydsl.core.types.Path;
+import com.querydsl.core.types.PathMetadata;
+import com.querydsl.core.types.dsl.DateTimePath;
+import com.querydsl.core.types.dsl.EntityPathBase;
+import com.querydsl.core.types.dsl.NumberPath;
 
 import javax.annotation.Generated;
 
-import static com.mysema.query.types.PathMetadataFactory.*;
+import static com.querydsl.core.types.PathMetadataFactory.forVariable;
 
 
 /**
  * QCreateTable is a Querydsl query type for CreateTable
  */
-@Generated("com.mysema.query.codegen.SupertypeSerializer")
+@Generated("com.querydsl.codegen.SupertypeSerializer")
 public class QCreateTable extends EntityPathBase<CreateTable> {
 
     private static final long serialVersionUID = -893748340L;
@@ -34,7 +36,7 @@ public class QCreateTable extends EntityPathBase<CreateTable> {
         super(path.getType(), path.getMetadata());
     }
 
-    public QCreateTable(PathMetadata<?> metadata) {
+    public QCreateTable(PathMetadata metadata) {
         super(CreateTable.class, metadata);
     }
 
